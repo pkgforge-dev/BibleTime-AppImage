@@ -12,8 +12,6 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/info.bibletime.BibleTime.svg
 export DESKTOP=/usr/share/applications/info.bibletime.BibleTime.desktop
 export APPNAME=BibleTime
 export STARTUPWMCLASS=info.bibletime.BibleTime
-export DEPLOY_QT=1
-export QT_DIR=qt6
 export ALWAYS_SOFTWARE=1
 
 # Deploy dependencies
@@ -21,3 +19,7 @@ quick-sharun /usr/bin/bibletime
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
+
+# Test the app for 12 seconds, if the app normally quits before that time
+# then skip this or check if some flag can be passed that makes it stay open
+quick-sharun --simple-test ./dist/*.AppImage
