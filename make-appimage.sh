@@ -12,7 +12,7 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/info.bibletime.BibleTime.svg
 export DESKTOP=/usr/share/applications/info.bibletime.BibleTime.desktop
 export APPNAME=BibleTime
 export STARTUPWMCLASS=info.bibletime.BibleTime
-export ALWAYS_SOFTWARE=1
+export USE_HOST_DRIVERS_EXPERIMENTAL=1
 
 # Deploy dependencies
 quick-sharun /usr/bin/bibletime
